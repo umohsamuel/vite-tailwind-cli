@@ -9,5 +9,5 @@ export function detectRunningPackageManager() {
   } else if (userAgent.includes("bun")) {
     return "bun";
   }
-  return "unknown";
+  return "npm";
 }

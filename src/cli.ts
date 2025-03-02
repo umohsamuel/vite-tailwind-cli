@@ -22,12 +22,12 @@ export function cli() {
     .action(async (dir) => {
       const pm = detectRunningPackageManager();
 
-      if (pm === "unknown") {
-        console.log(
-          "Please run the cli using a supported package manager: npm, yarn, pnpm or bun"
-        );
-        process.exit(1);
-      }
+      // if (pm === "unknown") {
+      //   console.log(
+      //     "Please run the cli using a supported package manager: npm, yarn, pnpm or bun"
+      //   );
+      //   process.exit(1);
+      // }
 
       let appName = dir;
 
