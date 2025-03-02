@@ -16,6 +16,8 @@
     "create-vite-tailwind-app": "./dist/index.js"
   },
   "type": "module",
+  "repository": "https://github.com/umohsamuel/vite-tailwind-cli",
+  "homepage": "https://github.com/umohsamuel/vite-tailwind-cli#readme",
   "scripts": {
     "dev": "tsx ./src/index.ts",
     "build": "tsc",
