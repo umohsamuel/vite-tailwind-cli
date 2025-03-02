@@ -10,20 +10,25 @@
   ],
   "author": "Umoh Samuel",
   "license": "MIT",
-  "version": "0.0.3",
-  "type": "module",
-  "main": "dist/index.js",
+  "version": "0.0.5",
+  "main": "./dist/index.js",
   "bin": {
-    "create-vite-tailwind-app": "dist/index.js"
+    "create-vite-tailwind-app": "./dist/index.js"
   },
+  "type": "module",
   "scripts": {
     "dev": "tsx ./src/index.ts",
     "build": "tsc",
+    "start": "tsc && node dist/index.js",
     "preview": "tsx preview"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/node": "^22.13.5",
-    "tsx": "^4.19.3"
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
   },
   "dependencies": {
     "@inquirer/prompts": "^7.3.2",

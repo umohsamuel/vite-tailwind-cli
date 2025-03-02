@@ -1,9 +1,12 @@
 import { execa } from "execa";
 
 export async function onCancel(appName: string) {
-  process.chdir("..");
+  if (appName === ".") {
+    return;
+  }
+
   try {
-    await execa("rm", ["-rf", "test-app"], {
+    await execa("rm", ["-rf", appName], {
       stdio: "inherit",
       shell: true,
     });
