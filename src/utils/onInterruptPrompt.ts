@@ -1,4 +1,4 @@
-import { onCancel } from "./onExit";
+import { onCancel } from "./onCancel.js";
 
 export async function OnInterruptPrompt(appName: string) {
   console.log("Prompt was interrupted. Exiting...");

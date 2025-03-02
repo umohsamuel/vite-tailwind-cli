@@ -1,7 +1,7 @@
 import { execa } from "execa";
 import { readFile, writeFile } from "node:fs/promises";
-import { tryCatch } from "./tryCatch";
-import { cssConfig, viteConfig } from "../lib/tailwind";
+import { tryCatch } from "./tryCatch.js";
+import { cssConfig, viteConfig } from "../lib/tailwind.js";
 
 export async function createViteProject(pm: string, appDir: string) {
   if (pm === "npm") {
