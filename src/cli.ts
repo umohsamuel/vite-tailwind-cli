@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { Command } from "commander";
 import { confirm, input } from "@inquirer/prompts";
 import { execa } from "execa";
