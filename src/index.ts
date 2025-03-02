@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { onCancel } from "./utils/onExit.js";
 import { cli } from "./cli.js";
 
 // process.on("SIGINT", async () => {
